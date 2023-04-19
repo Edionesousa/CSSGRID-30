@@ -32,10 +32,18 @@ header{
 }
 footer{
     display: flex;
+    flex-wrap: wrap;
     background-color:deeppink ;
     border: cyan solid;
     padding: 10px;
-    justify-content: space-around;
+    justify-content:center;
+
+}
+p{
+    width: auto;
+    border: cyan solid;
+    margin: 5px;
+
 
 }
 @media (max-width:349px){
@@ -47,6 +55,9 @@ footer{
 @media (max-width:349px){
     .footer{
         grid-template-columns: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+
 
     }
 }
