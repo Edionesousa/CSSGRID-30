@@ -1,28 +1,46 @@
 *{
     margin: 0;
     padding: 0;
+    font-size: 1.3rem;
     
 }
 body{
-    font-family: sans-serif;
-
 }
 header >section{
+    font-family: 'DM Serif Display', serif;
     display: flex;
     align-items: center;
+    height: auto;
+    text-align: center;
     background-color:deeppink ;
     border: cyan solid;
     padding: 10px;
     justify-content: space-around;
     
 }
-.bannerMenu ol{
+body article{
+    font-family: 'Kalam', cursive;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: yellow;
+    padding: 5px cyan solid;
+    width: auto;
+    height: 100px;
+}
+.bannerMenu{
     display: flex;
     flex-wrap: wrap;
+    flex-shrink: 1;
     justify-content: space-around;
     padding: 30px;
     border: 1px solid blue;
 }
+li{
+    display: block;
+    list-style-type: none;
+}
+
 .container{
     display: flex;
     flex-wrap: wrap;
@@ -35,7 +53,8 @@ header >section{
     justify-self: auto;
 
 }
-.item{
+.container >div{
+    font-family: 'Kalam', cursive;
     background-color: deeppink;
     height: auto;
     border: 5px solid;
@@ -43,12 +62,14 @@ header >section{
     
 }
 footer >section{
+    font-family: 'DM Serif Display', serif;
     display: flex;
     flex-wrap: wrap;
+    justify-content:space-around;
+    text-align: center;
     background-color:deeppink ;
     border: cyan solid;
     padding: 30px;
-    justify-content:space-around;
 
 }
 p{
@@ -58,7 +79,7 @@ p{
 
 
 }
-@media (max-width:349px){
+@media (max-width:700px){
     .container{
         grid-template-columns: 100%;
 
